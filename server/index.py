@@ -1,11 +1,9 @@
 import web , serial , re , os , time , datetime
-"""
 ser = serial.Serial(
     port = '/dev/ttyACM0' ,
     baudrate = 9600 ,
     timeout = 1
 )
-"""
 
 urls = (
     '/(.*)', 'control'

@@ -31,7 +31,32 @@ $(document).ready(function() {
 
         }
         else if ( $( this ).attr( 'name' )  == "s_medir" ) {
-            bootbox.alert( "Distancia" );    
+	    
+  		$.ajax({
+                    type: 'POST',
+                    data: { id_p : $( this ).attr("name") } ,
+                    beforeSend: function(){ } ,
+                    success: function( data ){ 
+                        console.log( data );
+			bootbox.dialog({
+              			message: 'Tempertura: '+data+' ªC',
+		              title: "Distancia",
+              			onEscape: function() {},
+              			show: true,
+              
+              			backdrop: false,
+              			closeButton: false,
+              			animate: false,
+              
+              			className: "temp-modal",
+              
+            		});
+
+            		setTimeout(function(){
+                		bootbox.hideAll()
+            		}, 2000 ); 
+                    }
+                });
         }
         else if ( $( this ).attr( 'name' )  == "exo_btn" ) {
             bootbox.alert( "cambio de modo" );    
@@ -40,7 +65,6 @@ $(document).ready(function() {
 
 
             console.log($( this ).attr( 'name' ) );
-            /*
                 $.ajax({
                     type: 'POST',
                     data: { id_p : $( this ).attr("name") } ,
@@ -50,9 +74,6 @@ $(document).ready(function() {
 
                     }
                 });
-            */
-
-
 
             }
         }      

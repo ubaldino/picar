@@ -12,9 +12,9 @@ ser = serial.Serial(
 """
 
 urls = (
-    '/', 'control'
+    '/(.*)', 'control'
 )
-app = web.application(urls, globals())
+#app = web.application(urls, globals())
 
 t_globals = {
     'datestr': web.datestr
@@ -27,10 +27,10 @@ MIN = 0
 BASE_DIR = os.path.dirname( os.path.dirname(__file__) )
 
 class control:
-    def GET( self  ):
+    def GET( self  , peticion ):
         return render.index()
 
-    def POST( self ):
+    def POST( self , peticion ):
         data = web.input()
         id_p = data.get('id_p')
         if id_p == 'adelante':
@@ -50,6 +50,7 @@ class control:
         elif id_p == 'c_izquierda':
             return id_p
 
+app = web.application( urls , globals() )
 application = app.wsgifunc()
 ##  deshabilit for ng
 if __name__ == "__main__":

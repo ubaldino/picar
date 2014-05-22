@@ -1,0 +1,30 @@
+#video_zone{
+	left: 0px;
+	right: 0px;
+}
+#controles{
+	position: relative;
+	left: 50px;
+	top: -143px;
+}
+
+
+button[name=adelante]{
+	top: -75px;
+	left: 122px;
+}
+button[name=stop]{
+	left: 4px;
+}
+button[name=atras]{
+	bottom: -75px;
+	left: -100px;
+	
+}
+button[name=izquierda]{
+	right: 350px;
+}
+
+button[name=derecha]{
+	left: -220px;
+}

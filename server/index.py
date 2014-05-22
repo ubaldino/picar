@@ -34,9 +34,9 @@ class control:
         data = web.input()
         id_p = data.get('id_p')
         if id_p == 'adelante':
-            os.system( "python /root/fw.py" )
+            return "adelante"
         elif id_p == 'atras':
-            os.system( "python /root/back.py" )
+            return "atras"
         return id_p
 
 application = app.wsgifunc()

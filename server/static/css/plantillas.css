@@ -1,28 +1,53 @@
 #video_zone{
 }
+
 #controles{
-	position: relative;
-	left: 50px;
-	top: -200px;
+	position: absolute;
+	left: 5px;
+	bottom: 65px;
+}
+
+#camara{
+	position: absolute;
+	right: -210px;
+	bottom: 65px;
 }
 
 
 button[name=adelante]{
-	top: -75px;
+	top: -55px;
 	left: 122px;
 }
+
 button[name=stop]{
 	left: 4px;
 }
 button[name=atras]{
-	bottom: -75px;
+	bottom: -55px;
 	left: -100px;
 	
 }
 button[name=izquierda]{
-	right: 350px;
+	right: 336px;
 }
 
 button[name=derecha]{
-	left: -220px;
+	left: -235px;
+}
+
+
+/*  control camara*/
+button[name=c_arriba]{
+	bottom: 60;
+	right: 185;
+}
+
+button[name=c_abajo]{
+	top: 60;
+	right: 296;
+}
+button[name=c_izquierda]{
+}
+
+button[name=c_derecha]{
 }

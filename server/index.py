@@ -34,10 +34,21 @@ class control:
         data = web.input()
         id_p = data.get('id_p')
         if id_p == 'adelante':
-            return "adelante"
+            return id_p
         elif id_p == 'atras':
-            return "atras"
-        return id_p
+            return id_p
+        elif id_p == 'izquierda':
+            return id_p
+        elif id_p == 'derecha':
+            return id_p
+        elif id_p == 'c_arriba':
+            return id_p
+        elif id_p == 'c_abajo':
+            return id_p
+        elif id_p == 'c_derecha':
+            return id_p
+        elif id_p == 'c_izquierda':
+            return id_p
 
 application = app.wsgifunc()
 ##  deshabilit for ng

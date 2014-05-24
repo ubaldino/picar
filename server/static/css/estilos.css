@@ -476,10 +476,14 @@ body #contenido #video_zone #microscopio button:active {
 body #contenido #video_zone #microscopio button:visited {
   background-color: #008000;
 }
-body #contenido #video_zone #microscopio img#m_img {
+body #contenido #video_zone #modal_img {
   position: absolute;
-  left: 0;
-  top: 0;
+  display: none;
+  top: -100;
   width: 60%;
+}
+body #contenido #video_zone #modal_img img#m_img {
+  position: relative;
+  width: 100%;
   height: auto;
 }

@@ -1,5 +1,4 @@
-import web , serial , re , os , time
-
+import web , serial , re , os , time , datetime
 """
 ser = serial.Serial(
     port = '/dev/ttyACM0' ,
@@ -50,20 +49,28 @@ class control:
             ser.write( chr( 0xff ) )
             time.sleep( .1)
             return ser.read( ser.inWaiting() )
+        # controles ipcam
         elif id_p == 'c_arriba':
+            ser.write( chr( 0xf9 ) )
             time.sleep( .1)
             return ser.read( ser.inWaiting() )
         elif id_p == 'c_abajo':
+            ser.write( chr( 0xfa ) )
             time.sleep( .1)
             return ser.read( ser.inWaiting() )
         elif id_p == 'c_derecha':
+            ser.write( chr( 0xf8 ) )
             time.sleep( .1)
             return ser.read( ser.inWaiting() )
         elif id_p == 'c_izquierda':
+            ser.write( chr( 0xf7 ) )
             time.sleep( .1)
             return ser.read( ser.inWaiting() )
         elif id_p == 'm_push':
-            return os.system( "sh photo.sh" )
+            name_file = datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".jpg"
+            os.system( "sh photo.sh %s"%name_file )
+            time.sleep( 1.5 )
+            return name_file
 
 app = web.application( urls , globals() )
 application = app.wsgifunc()

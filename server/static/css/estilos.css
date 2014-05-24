@@ -89,6 +89,28 @@ td {
 a img {
   border: none;
 }
+/*
+Mixins
+
+border-radius(val)
+  -webkit-border-radius: val
+  -moz-border-radius: val
+  border-radius: val
+  
+button {
+  border-radius(5px);
+}
+
+border-radius()
+  -webkit-border-radius: arguments
+  -moz-border-radius: arguments
+  border-radius: arguments
+
+button {
+  border-radius: 5px 10px;
+}
+
+*/
 body #contenido {
   position: absolute;
   background-color: #008000;
@@ -117,6 +139,11 @@ body #contenido #video_zone #controles {
   left: -93;
   bottom: 80;
 }
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #controles {
+    bottom: 70;
+  }
+}
 body #contenido #video_zone #controles label {
   color: #fff;
   font-weight: bold;
@@ -135,6 +162,12 @@ body #contenido #video_zone #controles button:active {
 }
 body #contenido #video_zone #controles button:visited {
   background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #controles button {
+    background-color: #eb012c;
+    padding: 20px;
+  }
 }
 body #contenido #video_zone #controles button[name="adelante"] {
   position: relative;
@@ -155,6 +188,12 @@ body #contenido #video_zone #controles button[name="adelante"]:active {
 }
 body #contenido #video_zone #controles button[name="adelante"]:visited {
   background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #controles button[name="adelante"] {
+    top: 0px;
+    left: 136px;
+  }
 }
 body #contenido #video_zone #controles button[name="atras"] {
   position: relative;
@@ -199,6 +238,12 @@ body #contenido #video_zone #controles button[name="stop"]:active {
 body #contenido #video_zone #controles button[name="stop"]:visited {
   background-color: #008000;
 }
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #controles button[name="stop"] {
+    top: 41px;
+    left: 39px;
+  }
+}
 body #contenido #video_zone #controles button[name="izquierda"] {
   position: relative;
   background: transparent url("../img/direccion.png") no-repeat;
@@ -222,6 +267,12 @@ body #contenido #video_zone #controles button[name="izquierda"]:active {
 }
 body #contenido #video_zone #controles button[name="izquierda"]:visited {
   background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #controles button[name="izquierda"] {
+    top: 42px;
+    left: -50px;
+  }
 }
 body #contenido #video_zone #controles button[name="derecha"] {
   position: relative;
@@ -247,10 +298,21 @@ body #contenido #video_zone #controles button[name="derecha"]:active {
 body #contenido #video_zone #controles button[name="derecha"]:visited {
   background-color: #008000;
 }
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #controles button[name="derecha"] {
+    top: 42px;
+    left: -16px;
+  }
+}
 body #contenido #video_zone #camara {
   position: absolute;
   right: 0;
   bottom: 20;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #camara {
+    bottom: 7;
+  }
 }
 body #contenido #video_zone #camara label {
   font-weight: bold;
@@ -261,6 +323,12 @@ body #contenido #video_zone #camara button {
   border-radius: 50%;
   padding: 40px;
   border: 0px;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #camara button {
+    background-color: #eb012c;
+    padding: 20px;
+  }
 }
 body #contenido #video_zone #camara button[name="c_izquierda"] {
   position: relative;
@@ -287,6 +355,12 @@ body #contenido #video_zone #camara button[name="c_izquierda"]:active {
 body #contenido #video_zone #camara button[name="c_izquierda"]:visited {
   background-color: #008000;
 }
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #camara button[name="c_izquierda"] {
+    top: -12px;
+    left: 70;
+  }
+}
 body #contenido #video_zone #camara button[name="c_derecha"] {
   position: relative;
   background: transparent url("../img/posicion.png") no-repeat;
@@ -312,6 +386,12 @@ body #contenido #video_zone #camara button[name="c_derecha"]:active {
 body #contenido #video_zone #camara button[name="c_derecha"]:visited {
   background-color: #008000;
 }
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #camara button[name="c_derecha"] {
+    top: -12px;
+    left: 79;
+  }
+}
 body #contenido #video_zone #camara button[name="c_arriba"] {
   position: relative;
   background: transparent url("../img/posicion.png") no-repeat;
@@ -330,6 +410,12 @@ body #contenido #video_zone #camara button[name="c_arriba"]:active {
 }
 body #contenido #video_zone #camara button[name="c_arriba"]:visited {
   background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #camara button[name="c_arriba"] {
+    top: -43px;
+    left: 2;
+  }
 }
 body #contenido #video_zone #camara button[name="c_abajo"] {
   position: relative;
@@ -355,6 +441,12 @@ body #contenido #video_zone #camara button[name="c_abajo"]:active {
 body #contenido #video_zone #camara button[name="c_abajo"]:visited {
   background-color: #008000;
 }
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #camara button[name="c_abajo"] {
+    top: 21px;
+    left: -45;
+  }
+}
 body #contenido #video_zone #microscopio button {
   position: absolute;
   top: 10;
@@ -369,6 +461,11 @@ body #contenido #video_zone #microscopio button {
   background-size: 100% 100%;
   background-position: 50% 50%;
   background-color: #01be46;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #microscopio button {
+    padding: 20px;
+  }
 }
 body #contenido #video_zone #microscopio button:hover {
   background-color: #f00;
@@ -385,13 +482,4 @@ body #contenido #video_zone #microscopio img#m_img {
   top: 0;
   width: 60%;
   height: auto;
-}
-@media screen and (min-width: 600px) {
-  button[name="adelante"] {
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    background-position: 20% 20%;
-    background-color: #daf524;
-  }
 }

@@ -1,7 +1,8 @@
-@media screen and (min-width: 600px) {
-  button[name="adelante"] {
-    background-size: 100% 100%;
-    background-position: 20% 20%;
-    background-color: #daf524;
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #f00;
+  }
+  #video_zone {
+    background-color: #f00;
   }
 }

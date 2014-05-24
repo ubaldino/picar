@@ -16,6 +16,28 @@ $color8 = #01BE46
 $color9 = #F3B802
 $color10 = #F12F02
 
+/*
+Mixins
+
+border-radius(val)
+  -webkit-border-radius: val
+  -moz-border-radius: val
+  border-radius: val
+  
+button {
+  border-radius(5px);
+}
+
+border-radius()
+  -webkit-border-radius: arguments
+  -moz-border-radius: arguments
+  border-radius: arguments
+
+button {
+  border-radius: 5px 10px;
+}
+
+*/
 
 
 
@@ -44,6 +66,9 @@ body
 				position absolute
 				left -93
 				bottom 80
+				@media screen and (max-width: 600px)
+					bottom 70
+
 				//background-color blue
 				label
 					color white
@@ -60,6 +85,9 @@ body
 					
 					&:visited
 						background-color green
+					@media screen and (max-width: 600px)
+						background-color $color6
+						padding 20px
 				button[name="adelante"]
 					position relative
 					background transparent url('../img/direccion.png') no-repeat
@@ -76,6 +104,9 @@ body
 					
 					&:visited
 						background-color green
+					@media screen and (max-width: 600px)
+						top 0px
+						left 136px
 				button[name="atras"]
 					position relative
 					background transparent url('../img/direccion.png') no-repeat
@@ -93,6 +124,7 @@ body
 					
 					&:visited
 						background-color green
+
 				button[name="stop"]
 					position relative
 					background transparent url('../img/stop.png') no-repeat
@@ -107,6 +139,9 @@ body
 					
 					&:visited
 						background-color green
+					@media screen and (max-width: 600px)
+						top 41px
+						left 39px
 				button[name="izquierda"]
 					position relative
 					background transparent url('../img/direccion.png') no-repeat
@@ -123,6 +158,9 @@ body
 					
 					&:visited
 						background-color green
+					@media screen and (max-width: 600px)
+						top 42px
+						left -50px
 				button[name="derecha"]
 					position relative
 					background transparent url('../img/direccion.png') no-repeat
@@ -139,12 +177,18 @@ body
 					
 					&:visited
 						background-color green
-
+					@media screen and (max-width: 600px)
+						top 42px
+						left -16px
 
 			#camara
 				position absolute
 				right 0
 				bottom 20
+				@media screen and (max-width: 600px)
+					bottom 7
+
+
 				//background-color blue
 				label
 					font-weight bold
@@ -153,6 +197,9 @@ body
 					border-radius 50%
 					padding 40px
 					border 0px
+					@media screen and (max-width: 600px)
+						background-color $color6
+						padding 20px
 				button[name="c_izquierda"]
 					position relative
 					background transparent url('../img/posicion.png') no-repeat
@@ -170,6 +217,9 @@ body
 					
 					&:visited
 						background-color green
+					@media screen and (max-width: 600px)
+						top -12px
+						left 70
 				button[name="c_derecha"]
 					position relative
 					background transparent url('../img/posicion.png') no-repeat
@@ -187,6 +237,9 @@ body
 					
 					&:visited
 						background-color green
+					@media screen and (max-width: 600px)
+						top -12px
+						left 79
 				button[name="c_arriba"]
 					position relative
 					background transparent url('../img/posicion.png') no-repeat
@@ -202,6 +255,9 @@ body
 					
 					&:visited
 						background-color green
+					@media screen and (max-width: 600px)
+						top -43px
+						left 2
 				button[name="c_abajo"]
 					position relative
 					background transparent url('../img/posicion.png') no-repeat
@@ -218,7 +274,9 @@ body
 					
 					&:visited
 						background-color green
-			
+					@media screen and (max-width: 600px)
+						top 21px
+						left -45
 			#microscopio
 				button
 					position absolute
@@ -231,6 +289,8 @@ body
 					background-size 100% 100%
 					background-position 50% 50%
 					background-color $color8
+					@media screen and (max-width: 600px)
+						padding 20px
 					//left -88
 					&:hover
 						background-color red
@@ -246,7 +306,4 @@ body
 					top 0
 					width 60%
 					height auto
-					
-
-
-@import 'responsive.styl'
+//@import 'responsive.styl'

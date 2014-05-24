@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASENAME='./photos/'
+BASENAME='./static/photos'
 BRIDGE=bridge
 PORT=80
 
@@ -9,17 +9,17 @@ PORT=80
 # $2 -> sequence
 function shot {
     TS=$BASENAME/`date +"%Y%m%d%H%M%S"`.jpg
-    echo 'capturing a photo in: '$TS
+    #echo 'capturing a photo in: '$TS
     ffmpeg -f v4l2 -s 640x480 -i /dev/video1 -vframes 1 $TS
-    echo 'sending to the bridge'
-    send $TS
+    #echo 'exito'
+    #send $TS
     exit 0
 }
 
-function send {
-    FILENAME=`basename $1`
-    curl -i -X POST http://bridge.pc/lib/photo.php?name=$FILENAME --data-binary "@$1"
-}
+#function send {
+#    FILENAME=`basename $1`
+#    curl -i -X POST http://bridge.pc/lib/photo.php?name=$FILENAME --data-binary "@$1"
+#}
 
 shot
 

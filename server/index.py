@@ -34,14 +34,19 @@ class control:
         data = web.input()
         id_p = data.get('id_p')
         if id_p == 'adelante':
+            ser.write( chr( 0xfb ) )
             return id_p
         elif id_p == 'atras':
+            ser.write( chr( 0xfc ) )
             return id_p
         elif id_p == 'izquierda':
+            ser.write( chr( 0xfd ) )
             return id_p
         elif id_p == 'derecha':
+            ser.write( chr( 0xfe ) )
             return id_p
         elif id_p == 'stop':
+            ser.write( chr( 0xff ) )
             return id_p
         elif id_p == 'c_arriba':
             return id_p

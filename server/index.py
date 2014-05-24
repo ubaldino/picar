@@ -14,11 +14,11 @@ ser = serial.Serial(
 urls = (
     '/(.*)', 'control'
 )
-#app = web.application(urls, globals())
 
 t_globals = {
     'datestr': web.datestr
 }
+
 render = web.template.render( 'plantillas' , base = 'base' , globals=t_globals )
 
 patron = re.compile('\d+')
@@ -41,6 +41,8 @@ class control:
             return id_p
         elif id_p == 'derecha':
             return id_p
+        elif id_p == 'stop':
+            return id_p
         elif id_p == 'c_arriba':
             return id_p
         elif id_p == 'c_abajo':
@@ -52,6 +54,5 @@ class control:
 
 app = web.application( urls , globals() )
 application = app.wsgifunc()
-##  deshabilit for ng
 if __name__ == "__main__":
     app.run()

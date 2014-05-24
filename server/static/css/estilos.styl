@@ -1,0 +1,232 @@
+@import 'nib'
+@import 'nib/vendor'
+@import 'nib/gradients'
+  
+global-reset()
+
+body
+	#contenido
+		position absolute
+		background-color green
+		left 0
+		top 0
+		width 100%
+		height 100%
+		#video_zone
+			position relative
+			left 0
+			top	0
+			width 100%
+			height 100%
+			background black
+			video
+				position absolute
+				top 0
+				left 0
+				width 100%
+				height 100%
+			#controles
+				position absolute
+				left -93
+				bottom 80
+				//background-color blue
+				label
+					color white
+					font-weight bold
+				button
+					border-radius 50%
+					padding 40px
+					border 0px
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+				button[name="adelante"]
+					position relative
+					background transparent url('../img/direccion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #daa520
+					top -83px
+					left 176px
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+				button[name="atras"]
+					position relative
+					background transparent url('../img/direccion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #20b2aa
+					top 83px
+					left 88px
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+				button[name="stop"]
+					position relative
+					background transparent url('../img/stop.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #20b2aa
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+				button[name="izquierda"]
+					position relative
+					background transparent url('../img/direccion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #20b2aa
+					left -170px
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+				button[name="derecha"]
+					position relative
+					background transparent url('../img/direccion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #20b2aa
+					left -94px
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+
+
+			#camara
+				position absolute
+				right 0
+				bottom 20
+				//background-color blue
+				label
+					font-weight bold
+					color white
+				button
+					border-radius 50%
+					padding 40px
+					border 0px
+				button[name="c_izquierda"]
+					position relative
+					background transparent url('../img/posicion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #20b2aa
+					transform-rotate 34
+					left 105
+					bottom 44
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+				button[name="c_derecha"]
+					position relative
+					background transparent url('../img/posicion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #20b2aa
+					left 158
+					bottom 44
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+				button[name="c_arriba"]
+					position relative
+					background transparent url('../img/posicion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #20b2aa
+					top -88
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+				button[name="c_abajo"]
+					position relative
+					background transparent url('../img/posicion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #20b2aa
+					left -88
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+			
+			#microscopio
+				button
+					position absolute
+					top 10
+					right 10
+					padding 30px
+					border-radius 26%
+					border 0px
+					background transparent url('../img/camara.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color #20b2aa
+					//left -88
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+				img#m_img
+					position absolute
+					left 0
+					top 0
+					width 60%
+					height auto
+					
+
+
+@import 'responsive.styl'

@@ -1,0 +1,375 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body #contenido {
+  position: absolute;
+  background-color: #008000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+body #contenido #video_zone {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+body #contenido #video_zone video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body #contenido #video_zone #controles {
+  position: absolute;
+  left: -93;
+  bottom: 80;
+}
+body #contenido #video_zone #controles label {
+  color: #fff;
+  font-weight: bold;
+}
+body #contenido #video_zone #controles button {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 40px;
+  border: 0px;
+}
+body #contenido #video_zone #controles button:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #controles button:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #controles button:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #controles button[name="adelante"] {
+  position: relative;
+  background: transparent url("../img/direccion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #daa520;
+  top: -83px;
+  left: 176px;
+}
+body #contenido #video_zone #controles button[name="adelante"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #controles button[name="adelante"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #controles button[name="adelante"]:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #controles button[name="atras"] {
+  position: relative;
+  background: transparent url("../img/direccion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #20b2aa;
+  top: 83px;
+  left: 88px;
+}
+body #contenido #video_zone #controles button[name="atras"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #controles button[name="atras"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #controles button[name="atras"]:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #controles button[name="stop"] {
+  position: relative;
+  background: transparent url("../img/stop.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #20b2aa;
+}
+body #contenido #video_zone #controles button[name="stop"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #controles button[name="stop"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #controles button[name="stop"]:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #controles button[name="izquierda"] {
+  position: relative;
+  background: transparent url("../img/direccion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #20b2aa;
+  left: -170px;
+}
+body #contenido #video_zone #controles button[name="izquierda"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #controles button[name="izquierda"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #controles button[name="izquierda"]:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #controles button[name="derecha"] {
+  position: relative;
+  background: transparent url("../img/direccion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #20b2aa;
+  left: -94px;
+}
+body #contenido #video_zone #controles button[name="derecha"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #controles button[name="derecha"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #controles button[name="derecha"]:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #camara {
+  position: absolute;
+  right: 0;
+  bottom: 20;
+}
+body #contenido #video_zone #camara label {
+  font-weight: bold;
+  color: #fff;
+}
+body #contenido #video_zone #camara button {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 40px;
+  border: 0px;
+}
+body #contenido #video_zone #camara button[name="c_izquierda"] {
+  position: relative;
+  background: transparent url("../img/posicion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #20b2aa;
+  transform-rotate: 34;
+  left: 105;
+  bottom: 44;
+}
+body #contenido #video_zone #camara button[name="c_izquierda"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #camara button[name="c_izquierda"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #camara button[name="c_izquierda"]:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #camara button[name="c_derecha"] {
+  position: relative;
+  background: transparent url("../img/posicion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #20b2aa;
+  left: 158;
+  bottom: 44;
+}
+body #contenido #video_zone #camara button[name="c_derecha"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #camara button[name="c_derecha"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #camara button[name="c_derecha"]:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #camara button[name="c_arriba"] {
+  position: relative;
+  background: transparent url("../img/posicion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #20b2aa;
+  top: -88;
+}
+body #contenido #video_zone #camara button[name="c_arriba"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #camara button[name="c_arriba"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #camara button[name="c_arriba"]:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #camara button[name="c_abajo"] {
+  position: relative;
+  background: transparent url("../img/posicion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #20b2aa;
+  left: -88;
+}
+body #contenido #video_zone #camara button[name="c_abajo"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #camara button[name="c_abajo"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #camara button[name="c_abajo"]:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #microscopio button {
+  position: absolute;
+  top: 10;
+  right: 10;
+  padding: 30px;
+  -webkit-border-radius: 26%;
+  border-radius: 26%;
+  border: 0px;
+  background: transparent url("../img/camara.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #20b2aa;
+}
+body #contenido #video_zone #microscopio button:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #microscopio button:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #microscopio button:visited {
+  background-color: #008000;
+}
+body #contenido #video_zone #microscopio img#m_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 40%;
+  }
+  #microscopio {
+    left: 10;
+  }
+}
+@media screen and (min-width: 360px) {
+  body {
+    width: 40%;
+  }
+  #microscopio {
+    left: 100;
+  }
+}

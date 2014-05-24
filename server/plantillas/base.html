@@ -1,23 +1,18 @@
 $def with (page)
 
 <!DOCTYPE>
-
 <html lang="es" > 
 	<head> 
 		<meta charset="utf-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>PiCar</title> <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. --> 
+		<title>PiCar</title> 
 		<script type="text/javascript" src="/static/js/jquery-2.0.3.min.js" ></script>
-		<link rel="stylesheet" href="/static/css/normalize.css"> 
-		<link rel="stylesheet" href="/static/css/foundation.css"> <!-- If you are using the gem version, you need this only --> 
-		<!--<link rel="stylesheet" href="static/css/app.css"> -->
-		<script type="text/javascript" src="/static/js/vendor/modernizr.js"></script> 
 		<script type="text/javascript" src="/static/js/funciones.js" ></script>
-		<link rel="stylesheet" href="/static/css/plantillas.css">
-	</head> 
-	<body> <!-- body content here --> 
-		$:page
-		  <script src="/static/js/foundation.min.js"></script>
-
+		<link rel="stylesheet" href="/static/css/estilos.css">
+	</head>
+	<body>
+		<div id="contenido">
+			$:page
+		</div>
 	</body> 
 </html>

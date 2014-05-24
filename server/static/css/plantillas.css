@@ -12,6 +12,10 @@
 	right: -210px;
 	bottom: 65px;
 }
+img{
+	width: 100%;
+	height: auto;
+}
 
 
 button[name=adelante]{
@@ -51,3 +55,14 @@ button[name=c_izquierda]{
 
 button[name=c_derecha]{
 }
+
+#microscopio{
+	position: absolute;
+	top: 2;
+	left: 952;
+	width: 400px;
+
+}
+
+
+

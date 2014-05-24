@@ -1,19 +1,33 @@
-<div id="video_zone" class="flex-video widescreen vimeo">
-	<center>	
-		<video src="/static/taylor.mp4" loop autoplay> </video>
-	</center>
+
+	<!--<img src="http://192.168.5.125:8080/video" loop autoplay> </img>-->
+<div id="video_zone" >
+	
+	<video src="/static/cats.mp4" loop autoplay></video>
+	
 	<div id='controles'>
-		<button class="button [ radius round ]" name="adelante" value="">Adelante</button>
-		<button class="button [ secondary radius ]" name="stop" value="">Stop</button>
-		<button class="button [ radius round ]" name="atras" value="">Atras</button>
-		<button class="button [ round alert ]" name="izquierda" value="">Izquierda</button>
-		<button class="button [ round alert ]" name="derecha" value="">Derecha</button>
+		<button class="button [ radius round ]" name="adelante" value=""></button>
+		<button class="button [ radius round ]" name="atras" value=""></button>
+		<button class="button [ secondary radius ]" name="stop" value=""></button>
+		<button class="button [ round alert ]" name="izquierda" value=""></button>
+		<button class="button [ round alert ]" name="derecha" value=""></button>
+		<center>
+			<label> Control movimiento</label> <br/>		
+		</center>
+	</div>
+		
+	<div id='camara'>
+		<button class="button [ round alert ]" name="c_izquierda" value=""></button>
+		<button class="button [ round alert ]" name="c_derecha" value=""></button>
+		<button class="button [ radius round success ]" name="c_arriba" value=""></button>
+		<button class="button [ radius round success ]" name="c_abajo" value=""></button>
+		<center>
+			<label> Control camara</label> 	
+		</center>
 	</div>
 
-	<div id='camara'>
-		<button class="button [ round alert ]" name="c_izquierda" value="">Izquierda</button>
-		<button class="button [ round alert ]" name="c_derecha" value="">Derecha</button>
-		<button class="button [ radius round success ]" name="c_arriba" value="">Arriba</button>
-		<button class="button [ radius round success ]" name="c_abajo" value="">Abajo</button>
-	</div>
+	<div id="microscopio">
+		<button class="button [ radius round success ]" name="m_push" value=""></button>
+		<img id="m_img" src="/static/img/cocoseco.jpg" alt="">
+	</div>	
+	
 </div>

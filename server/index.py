@@ -68,8 +68,8 @@ class control:
             return ser.read( ser.inWaiting() )
         elif id_p == 'm_push':
             name_file = datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".jpg"
-            os.system( "sh photo.sh %s"%name_file )
-            time.sleep( 1.5 )
+            #os.system( "sh photo.sh %s"%name_file )
+            #time.sleep( 1.5 )
             return name_file
 
 app = web.application( urls , globals() )

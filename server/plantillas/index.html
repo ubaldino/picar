@@ -2,8 +2,8 @@
 	<!--<img src="http://192.168.5.125:8080/video" loop autoplay> </img>-->
 <div id="video_zone" >
 	
-	<img class="video_c" src="http://192.168.0.102:8080/video" ></img>
-	<!--<video class="video_c" src="/static/cats.mp4" loop autoplay></video>-->
+	<!--<img class="video_c" src="http://192.168.0.102:8080/video" ></img>-->
+	<video class="video_c" src="/static/cats.mp4" loop autoplay></video>
 	
 	<div id='controles'>
 		<button class="button [ radius round ]" name="adelante" value=""></button>
@@ -18,20 +18,36 @@
 		
 	<div id='camara'>
 		<button class="button [ round alert ]" name="c_izquierda" value=""></button>
+		<button class="button [ round alert ]" name="c_izquierda2" value=""></button>
 		<button class="button [ round alert ]" name="c_derecha" value=""></button>
+		<button class="button [ round alert ]" name="c_derecha2" value=""></button>
 		<button class="button [ radius round success ]" name="c_arriba" value=""></button>
 		<button class="button [ radius round success ]" name="c_abajo" value=""></button>
 		<center>
 			<label> Control camara</label> 	
 		</center>
 	</div>
-	<div style="clear:both"></div>
-	<div id="modal_img" >
-			<img id="m_img" src="" alt="">
+
+	
+	<div id="microscopio">
+		<button class="button [ radius round success ]" name="mp_arriba" value=""></button>
+		<button class="button [ radius round success ]" name="m_push" value=""></button>	
+		<button class="button [ radius round success ]" name="mp_abajo" value=""></button>
 	</div>
 
-	<div id="microscopio">
-		<button class="button [ radius round success ]" name="m_push" value=""></button>	
+	<div id="s_sharp">
+		<button class="button [ radius round success ]" name="s_izquierda" value=""></button>
+		<button class="button [ radius round alert ]" name="s_medir" value="">medir <br/>distancia	</button>
+		<button class="button [ radius round success ]" name="s_derecha" value=""></button>
+	</div>
+
+	<div id="exo_modo">
+		<button class="button [ radius round success ]" name="exo_btn" value="Controles">modo</button>
 	</div>	
+
+	<div id="exo_temp">
+		<button class="button [ radius round success ]" name="temp_btn" value="Controles">temperatura</button>
+	</div>	
+
 	
 </div>

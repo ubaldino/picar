@@ -62,17 +62,23 @@ body
 				left 0
 				width 100%
 				height 100%
+
 			#controles
 				position absolute
 				left -93
-				bottom 80
+				bottom 13%
 				@media screen and (max-width: 600px)
 					bottom 70
 
 				//background-color blue
-				label
-					color white
-					font-weight bold
+				center
+					label
+						position: absolute
+						left 30%
+						top 150%
+						font-weight bold
+						font-size 1.2em
+						color white
 				button
 					border-radius 50%
 					padding 40px
@@ -161,6 +167,7 @@ body
 					@media screen and (max-width: 600px)
 						top 42px
 						left -50px
+
 				button[name="derecha"]
 					position relative
 					background transparent url('../img/direccion.png') no-repeat
@@ -183,16 +190,20 @@ body
 
 			#camara
 				position absolute
-				right 0
-				bottom 20
+				right 7%
+				bottom 3%
 				@media screen and (max-width: 600px)
 					bottom 7
 
 
 				//background-color blue
-				label
-					font-weight bold
-					color white
+				center
+					label
+						position: absolute
+						left 63%
+						font-weight bold
+						font-size 1.2em
+						color white
 				button
 					border-radius 50%
 					padding 40px
@@ -207,7 +218,7 @@ body
 					background-position 50% 50%
 					background-color $color7
 					transform rotate(-90deg)
-					left 105
+					left 54%
 					bottom 44
 					&:hover
 						background-color red
@@ -220,6 +231,29 @@ body
 					@media screen and (max-width: 600px)
 						top -12px
 						left 70
+
+				button[name="c_izquierda2"]
+					position relative
+					background transparent url('../img/direccion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color $color7
+					transform rotate(-90deg)
+					left 22%
+					bottom 44
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						top -12px
+						left 70
+				
+
 				button[name="c_derecha"]
 					position relative
 					background transparent url('../img/posicion.png') no-repeat
@@ -227,7 +261,7 @@ body
 					background-position 50% 50%
 					background-color $color7
 					transform rotate(90deg)
-					left 158
+					left 47%
 					bottom 44
 					&:hover
 						background-color red
@@ -240,6 +274,29 @@ body
 					@media screen and (max-width: 600px)
 						top -12px
 						left 79
+
+				button[name="c_derecha2"]
+					position relative
+					background transparent url('../img/direccion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color $color7
+					transform rotate(90deg)
+					left 45%
+					bottom 44
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						top -12px
+						left 79
+
+
 				button[name="c_arriba"]
 					position relative
 					background transparent url('../img/posicion.png') no-repeat
@@ -278,10 +335,30 @@ body
 						top 21px
 						left -45
 			#microscopio
+				
+				button[name="mp_arriba"]
+					position absolute
+					background transparent url('../img/posicion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color $color8
+					top 35%
+					right 1%
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						top -43px
+						left 2
 				button
 					position absolute
-					top 10
-					right 10
+					top 45%
+					right 1%
 					padding 30px
 					border-radius 26%
 					border 0px
@@ -300,13 +377,151 @@ body
 					
 					&:visited
 						background-color green
-			#modal_img
-				position absolute
-				display none
-				top -100
-				width 60%
-				img#m_img
+				button[name="mp_abajo"]
+					position absolute
+					background transparent url('../img/posicion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color $color8
+					transform rotate(180deg)
+					top 55%
+					right 1%
+
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						top -43px
+						left 2
+			#s_sharp
+				position: absolute
+				bottom: 5%
+				left 37%
+				button
+					border-radius 50%
+					padding 40px
+					border 0px
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						background-color $color6
+						padding 20px
+
+				button[name="s_izquierda"]
 					position relative
-					width 100%
-					height auto
+					background transparent url('../img/posicion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color $color8
+					transform rotate(-90deg)
+					left 5%
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						top -43px
+						left 2
+				button[name="s_medir"]
+					position relative
+					font-weight bold
+					font-size 1.1em
+					background-color $color8
+					border-radius 30%
+					padding 15px 10px
+					border 0px
+					top 15px
+					left 7%
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						top -43px
+						left 2
+				button[name="s_derecha"]
+					position relative
+					background transparent url('../img/posicion.png') no-repeat
+					background-size 100% 100%
+					background-position 50% 50%
+					background-color $color8
+					transform rotate(90deg)
+					left 10%
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						top -43px
+						left 2
+
+			#exo_modo
+				position: absolute
+				top: 1%
+				left 0.5%
+				button[name="exo_btn"]
+					background-color red
+					font-weight bold
+					font-size 1.7em
+					border-radius 10%
+					padding 10px 10px
+					border 0px
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						background-color $color6
+						padding 20px
+
+			#exo_temp
+				position: absolute
+				top: 1%
+				right 0.5%
+				button[name="temp_btn"]
+					background-color red
+					font-weight bold
+					font-size 1.7em
+					border-radius 10%
+					padding 10px 10px
+					border 0px
+					&:hover
+						background-color red
+					
+					&:active
+						background-color blue
+					
+					&:visited
+						background-color green
+					@media screen and (max-width: 600px)
+						background-color $color6
+						padding 20px
+
 //@import 'responsive.styl'

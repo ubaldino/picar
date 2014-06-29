@@ -137,16 +137,20 @@ body #contenido #video_zone .video_c {
 body #contenido #video_zone #controles {
   position: absolute;
   left: -93;
-  bottom: 80;
+  bottom: 13%;
 }
 @media screen and (max-width: 600px) {
   body #contenido #video_zone #controles {
     bottom: 70;
   }
 }
-body #contenido #video_zone #controles label {
-  color: #fff;
+body #contenido #video_zone #controles center label {
+  position: absolute;
+  left: 30%;
+  top: 150%;
   font-weight: bold;
+  font-size: 1.2em;
+  color: #fff;
 }
 body #contenido #video_zone #controles button {
   -webkit-border-radius: 50%;
@@ -306,16 +310,19 @@ body #contenido #video_zone #controles button[name="derecha"]:visited {
 }
 body #contenido #video_zone #camara {
   position: absolute;
-  right: 0;
-  bottom: 20;
+  right: 7%;
+  bottom: 3%;
 }
 @media screen and (max-width: 600px) {
   body #contenido #video_zone #camara {
     bottom: 7;
   }
 }
-body #contenido #video_zone #camara label {
+body #contenido #video_zone #camara center label {
+  position: absolute;
+  left: 63%;
   font-weight: bold;
+  font-size: 1.2em;
   color: #fff;
 }
 body #contenido #video_zone #camara button {
@@ -343,7 +350,7 @@ body #contenido #video_zone #camara button[name="c_izquierda"] {
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  left: 105;
+  left: 54%;
   bottom: 44;
 }
 body #contenido #video_zone #camara button[name="c_izquierda"]:hover {
@@ -361,6 +368,37 @@ body #contenido #video_zone #camara button[name="c_izquierda"]:visited {
     left: 70;
   }
 }
+body #contenido #video_zone #camara button[name="c_izquierda2"] {
+  position: relative;
+  background: transparent url("../img/direccion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #0067c3;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  left: 22%;
+  bottom: 44;
+}
+body #contenido #video_zone #camara button[name="c_izquierda2"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #camara button[name="c_izquierda2"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #camara button[name="c_izquierda2"]:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #camara button[name="c_izquierda2"] {
+    top: -12px;
+    left: 70;
+  }
+}
 body #contenido #video_zone #camara button[name="c_derecha"] {
   position: relative;
   background: transparent url("../img/posicion.png") no-repeat;
@@ -374,7 +412,7 @@ body #contenido #video_zone #camara button[name="c_derecha"] {
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  left: 158;
+  left: 47%;
   bottom: 44;
 }
 body #contenido #video_zone #camara button[name="c_derecha"]:hover {
@@ -388,6 +426,37 @@ body #contenido #video_zone #camara button[name="c_derecha"]:visited {
 }
 @media screen and (max-width: 600px) {
   body #contenido #video_zone #camara button[name="c_derecha"] {
+    top: -12px;
+    left: 79;
+  }
+}
+body #contenido #video_zone #camara button[name="c_derecha2"] {
+  position: relative;
+  background: transparent url("../img/direccion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #0067c3;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 45%;
+  bottom: 44;
+}
+body #contenido #video_zone #camara button[name="c_derecha2"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #camara button[name="c_derecha2"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #camara button[name="c_derecha2"]:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #camara button[name="c_derecha2"] {
     top: -12px;
     left: 79;
   }
@@ -447,10 +516,36 @@ body #contenido #video_zone #camara button[name="c_abajo"]:visited {
     left: -45;
   }
 }
+body #contenido #video_zone #microscopio button[name="mp_arriba"] {
+  position: absolute;
+  background: transparent url("../img/posicion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #01be46;
+  top: 35%;
+  right: 1%;
+}
+body #contenido #video_zone #microscopio button[name="mp_arriba"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #microscopio button[name="mp_arriba"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #microscopio button[name="mp_arriba"]:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #microscopio button[name="mp_arriba"] {
+    top: -43px;
+    left: 2;
+  }
+}
 body #contenido #video_zone #microscopio button {
   position: absolute;
-  top: 10;
-  right: 10;
+  top: 45%;
+  right: 1%;
   padding: 30px;
   -webkit-border-radius: 26%;
   border-radius: 26%;
@@ -476,14 +571,205 @@ body #contenido #video_zone #microscopio button:active {
 body #contenido #video_zone #microscopio button:visited {
   background-color: #008000;
 }
-body #contenido #video_zone #modal_img {
+body #contenido #video_zone #microscopio button[name="mp_abajo"] {
   position: absolute;
-  display: none;
-  top: -100;
-  width: 60%;
+  background: transparent url("../img/posicion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #01be46;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  top: 55%;
+  right: 1%;
 }
-body #contenido #video_zone #modal_img img#m_img {
+body #contenido #video_zone #microscopio button[name="mp_abajo"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #microscopio button[name="mp_abajo"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #microscopio button[name="mp_abajo"]:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #microscopio button[name="mp_abajo"] {
+    top: -43px;
+    left: 2;
+  }
+}
+body #contenido #video_zone #s_sharp {
+  position: absolute;
+  bottom: 5%;
+  left: 37%;
+}
+body #contenido #video_zone #s_sharp button {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 40px;
+  border: 0px;
+}
+body #contenido #video_zone #s_sharp button:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #s_sharp button:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #s_sharp button:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #s_sharp button {
+    background-color: #eb012c;
+    padding: 20px;
+  }
+}
+body #contenido #video_zone #s_sharp button[name="s_izquierda"] {
   position: relative;
-  width: 100%;
-  height: auto;
+  background: transparent url("../img/posicion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #01be46;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  left: 5%;
+}
+body #contenido #video_zone #s_sharp button[name="s_izquierda"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #s_sharp button[name="s_izquierda"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #s_sharp button[name="s_izquierda"]:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #s_sharp button[name="s_izquierda"] {
+    top: -43px;
+    left: 2;
+  }
+}
+body #contenido #video_zone #s_sharp button[name="s_medir"] {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #01be46;
+  -webkit-border-radius: 30%;
+  border-radius: 30%;
+  padding: 15px 10px;
+  border: 0px;
+  top: 15px;
+  left: 7%;
+}
+body #contenido #video_zone #s_sharp button[name="s_medir"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #s_sharp button[name="s_medir"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #s_sharp button[name="s_medir"]:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #s_sharp button[name="s_medir"] {
+    top: -43px;
+    left: 2;
+  }
+}
+body #contenido #video_zone #s_sharp button[name="s_derecha"] {
+  position: relative;
+  background: transparent url("../img/posicion.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-color: #01be46;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 10%;
+}
+body #contenido #video_zone #s_sharp button[name="s_derecha"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #s_sharp button[name="s_derecha"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #s_sharp button[name="s_derecha"]:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #s_sharp button[name="s_derecha"] {
+    top: -43px;
+    left: 2;
+  }
+}
+body #contenido #video_zone #exo_modo {
+  position: absolute;
+  top: 1%;
+  left: 0.5%;
+}
+body #contenido #video_zone #exo_modo button[name="exo_btn"] {
+  background-color: #f00;
+  font-weight: bold;
+  font-size: 1.7em;
+  -webkit-border-radius: 10%;
+  border-radius: 10%;
+  padding: 10px 10px;
+  border: 0px;
+}
+body #contenido #video_zone #exo_modo button[name="exo_btn"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #exo_modo button[name="exo_btn"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #exo_modo button[name="exo_btn"]:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #exo_modo button[name="exo_btn"] {
+    background-color: #eb012c;
+    padding: 20px;
+  }
+}
+body #contenido #video_zone #exo_temp {
+  position: absolute;
+  top: 1%;
+  right: 0.5%;
+}
+body #contenido #video_zone #exo_temp button[name="temp_btn"] {
+  background-color: #f00;
+  font-weight: bold;
+  font-size: 1.7em;
+  -webkit-border-radius: 10%;
+  border-radius: 10%;
+  padding: 10px 10px;
+  border: 0px;
+}
+body #contenido #video_zone #exo_temp button[name="temp_btn"]:hover {
+  background-color: #f00;
+}
+body #contenido #video_zone #exo_temp button[name="temp_btn"]:active {
+  background-color: #00f;
+}
+body #contenido #video_zone #exo_temp button[name="temp_btn"]:visited {
+  background-color: #008000;
+}
+@media screen and (max-width: 600px) {
+  body #contenido #video_zone #exo_temp button[name="temp_btn"] {
+    background-color: #eb012c;
+    padding: 20px;
+  }
 }

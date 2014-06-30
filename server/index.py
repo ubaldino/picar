@@ -89,6 +89,59 @@ class control:
             ser.write( chr( 0xf7 ) )
             time.sleep( .1)
             return ser.read( ser.inWaiting() )
+
+        elif id_p == 'exo_btn':
+            ser.write( chr( 0xef ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 's_izquierda':
+            ser.write( chr( 0xf2 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 's_derecha':
+            ser.write( chr( 0xf1 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 's_medir':
+            ser.write( chr( 0xf0 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 'temp_btn':
+            ser.write( chr( 0xee ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 'mp_arriba':
+            ser.write( chr( 0xf3 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 'mp_abajo':
+            ser.write( chr( 0xf4 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 'c_arriba':
+            ser.write( chr( 0xf9 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 'c_izquierda':
+            ser.write( chr( 0xf7 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 'c_izquierda2':
+            ser.write( chr( 0xf6 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 'c_abajo':
+            ser.write( chr( 0xfa ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 'c_derecha':
+            ser.write( chr( 0xf8 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
+        elif id_p == 'c_derecha2':
+            ser.write( chr( 0xf5 ) )
+            time.sleep( .1)
+            return ser.read( ser.inWaiting() )
         elif id_p == 'm_push':
             name_file = datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".jpg"
             #os.system( "sh photo.sh %s"%name_file )

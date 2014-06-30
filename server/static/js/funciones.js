@@ -5,26 +5,57 @@ $(document).ready(function() {
     $("button").bind( "click" , function(){
         //console.log( $(this).attr("name") );
 
+        
 
-        if( $( this ).attr( 'name' ) != "m_push" ){
-            
 
-	console.log($( this ).attr( 'name' ) );
-		/*
-            $.ajax({
-                type: 'POST',
-                data: { id_p : $( this ).attr("name") } ,
-                beforeSend: function(){ } ,
-                success: function( data ){ 
-                    console.log( data );
-
-                }
+    if( $( this ).attr( 'name' ) != "m_push" ){
+        
+        if ( $( this ).attr( 'name' )  == "temp_btn" ) {
+            bootbox.dialog({
+              message: 'Tempertura: 24 ªC',
+              title: "Temperatura",
+              onEscape: function() {},
+              show: true,
+              
+              backdrop: false,
+              closeButton: false,
+              animate: false,
+              
+              className: "temp-modal",
+              
             });
-*/
 
-
+            setTimeout(function(){
+                bootbox.hideAll()
+            }, 2000 ); 
 
         }
+        else if ( $( this ).attr( 'name' )  == "s_medir" ) {
+            bootbox.alert( "Distancia" );    
+        }
+        else if ( $( this ).attr( 'name' )  == "exo_btn" ) {
+            bootbox.alert( "cambio de modo" );    
+        }
+        else{
+
+
+            console.log($( this ).attr( 'name' ) );
+            /*
+                $.ajax({
+                    type: 'POST',
+                    data: { id_p : $( this ).attr("name") } ,
+                    beforeSend: function(){ } ,
+                    success: function( data ){ 
+                        console.log( data );
+
+                    }
+                });
+            */
+
+
+
+            }
+        }      
     });
 
 
@@ -32,8 +63,34 @@ $(document).ready(function() {
 
     
     $("button[name='m_push']").bind( "click" , function(){
-        var some_html = '<img src="/static/photos/20140524213617.jpg" width="800px"/><br />';
-        bootbox.alert( some_html );
+            bootbox.dialog({
+              message: '<img  src="/static/photos/20140524213617.jpg" width="800px"/>',
+              title: "Captura de microscopio",
+              onEscape: function() {},
+              show: true,
+              
+              backdrop: false,
+              closeButton: false,
+              animate: false,
+              
+              className: "my-modal",
+              
+              /*buttons: {
+                success: {   
+                  label: "Success!",
+                  className: "btn-success",
+                  
+                  callback: function() {}
+                },
+                "Danger!": {
+                  className: "btn-danger",
+                  callback: function() {}
+                },
+                
+                "Another label": function() {}
+              }
+              */
+            });
 
             /*
             $.ajax({

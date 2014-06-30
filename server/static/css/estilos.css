@@ -118,7 +118,14 @@ button {
 }
 .temp-modal .modal-content {
   position: absolute;
-  left: -10%;
+  right: -60%;
+  top: 29px;
+  width: 20%;
+}
+.distancia-modal .modal-content {
+  position: absolute;
+  top: 390px;
+  left: 35%;
   width: 20%;
 }
 body #contenido {
@@ -242,6 +249,7 @@ body #contenido #video_zone #controles button[name="stop"] {
   background-size: 100% 100%;
   background-position: 50% 50%;
   background-color: #f12f02;
+  left: 1.5%;
 }
 body #contenido #video_zone #controles button[name="stop"]:hover {
   background-color: #f00;
@@ -271,7 +279,7 @@ body #contenido #video_zone #controles button[name="izquierda"] {
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  left: -170px;
+  left: -161px;
 }
 body #contenido #video_zone #controles button[name="izquierda"]:hover {
   background-color: #f00;
@@ -301,7 +309,7 @@ body #contenido #video_zone #controles button[name="derecha"] {
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  left: -94px;
+  left: -19%;
 }
 body #contenido #video_zone #controles button[name="derecha"]:hover {
   background-color: #f00;
@@ -616,6 +624,13 @@ body #contenido #video_zone #s_sharp {
   position: absolute;
   bottom: 5%;
   left: 37%;
+}
+body #contenido #video_zone #s_sharp center label {
+  position: absolute;
+  left: 30%;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff;
 }
 body #contenido #video_zone #s_sharp button {
   -webkit-border-radius: 50%;

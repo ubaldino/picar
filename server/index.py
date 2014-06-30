@@ -1,9 +1,11 @@
 import web , serial , re , os , time , datetime
+"""
 ser = serial.Serial(
     port = '/dev/ttyACM0' ,
     baudrate = 9600 ,
     timeout = 1
 )
+"""
 
 urls = (
     '/(.*)', 'control'
@@ -72,11 +74,11 @@ class control:
             return ser.read( ser.inWaiting() )
         # controles ipcam
         elif id_p == 'c_arriba':
-            ser.write( chr( 0xf9 ) )
+            ser.write( chr( 0xfa ) )
             time.sleep( .1)
             return ser.read( ser.inWaiting() )
         elif id_p == 'c_abajo':
-            ser.write( chr( 0xfa ) )
+            ser.write( chr( 0xf9 ) )
             time.sleep( .1)
             return ser.read( ser.inWaiting() )
         elif id_p == 'c_derecha':

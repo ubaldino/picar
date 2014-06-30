@@ -5,129 +5,108 @@ $(document).ready(function() {
     $("button").bind( "click" , function(){
         //console.log( $(this).attr("name") );
 
+        if( $( this ).attr( 'name' ) != "m_push" ){
         
+            if ( $( this ).attr( 'name' )  == "temp_btn" ) {
 
-
-    if( $( this ).attr( 'name' ) != "m_push" ){
-        
-        if ( $( this ).attr( 'name' )  == "temp_btn" ) {
-            bootbox.dialog({
-              message: 'Tempertura: 24 ÂªC',
-              title: "Temperatura",
-              onEscape: function() {},
-              show: true,
-              
-              backdrop: false,
-              closeButton: false,
-              animate: false,
-              
-              className: "temp-modal",
-              
-            });
-
-            setTimeout(function(){
-                bootbox.hideAll()
-            }, 2000 ); 
-
-        }
-        else if ( $( this ).attr( 'name' )  == "s_medir" ) {
-            bootbox.dialog({
-                message: 'modo',
-                title: "Distancia",
-                onEscape: function() {},
-                show: true,
-      
-                backdrop: false,
-                closeButton: false,
-                animate: false,
-      
-                className: "distancia-modal",
-      
-            });
-  		    /*
-            $.ajax({
-                type: 'POST',
-                data: { id_p : $( this ).attr("name") } ,
-                beforeSend: function(){ } ,
-                success: function( data ){ 
-                    console.log( data );
-                    bootbox.dialog({
-              			message: 'Tempertura: '+data+' ªC',
-                        title: "Distancia",
-              			onEscape: function() {},
-              			show: true,
-              
-              			backdrop: false,
-              			closeButton: false,
-              			animate: false,
-              
-              			className: "distancia-modal",
-              
-            		});
-
-            		setTimeout(function(){
-                		bootbox.hideAll()
-            		}, 2000 ); 
-                }
-            });
-            */
-        }
-        else if ( $( this ).attr( 'name' )  == "exo_btn" ) {
-            bootbox.dialog({
-                message: 'modo',
-                title: "Distancia",
-                onEscape: function() {},
-                show: true,
-      
-                backdrop: false,
-                closeButton: false,
-                animate: false,
-      
-                className: "modo-modal",
-      
-            });
-            /*
-            $.ajax({
-                type: 'POST',
-                data: { id_p : $( this ).attr("name") } ,
-                beforeSend: function(){ } ,
-                success: function( data ){ 
-                    console.log( data );
-                    bootbox.dialog({
-                        message: 'Tempertura: '+data+' ªC',
-                        title: "Distancia",
-                        onEscape: function() {},
-                        show: true,
-              
-                        backdrop: false,
-                        closeButton: false,
-                        animate: false,
-              
-                        className: "modo-modal",
-              
-                    });
-
-                    setTimeout(function(){
-                        bootbox.hideAll()
-                    }, 2000 ); 
-                }
-            });
-
-            */
-        }
-        else{
-
-
-            console.log($( this ).attr( 'name' ) );
                 $.ajax({
                     type: 'POST',
                     data: { id_p : $( this ).attr("name") } ,
                     beforeSend: function(){ } ,
                     success: function( data ){ 
                         console.log( data );
+                        bootbox.dialog({
+                            message: 'Tempertura: '+data.split(":")[0]+'<br/>Humedad: '+data.split(":")[1] ,
+                            title: "Temperatura/Humedad",
+                            onEscape: function() {},
+                            show: true,
 
+                            backdrop: false,
+                            closeButton: false,
+                            animate: false,
+
+                            className: "temp-modal",
+
+                        });
+
+                        setTimeout(function(){
+                            bootbox.hideAll()
+                        }, 2000 ); 
                     }
                 });
+
+            }
+            else if ( $( this ).attr( 'name' )  == "s_medir" ) {
+
+                $.ajax({
+                    type: 'POST',
+                    data: { id_p : $( this ).attr("name") } ,
+                    beforeSend: function(){ } ,
+                    success: function( data ){ 
+                        console.log( data );
+                        bootbox.dialog({
+                  			message: 'Distancia: '+data+ ' [cm]',
+                            title: "Distancia",
+                  			onEscape: function() {},
+                  			show: true,
+                  
+                  			backdrop: false,
+                  			closeButton: false,
+                  			animate: false,
+                  
+                  			className: "distancia-modal",
+                  
+                		});
+
+                		setTimeout(function(){
+                    		bootbox.hideAll()
+                		}, 2000 ); 
+                    }
+                });
+
+            }
+            else if ( $( this ).attr( 'name' )  == "exo_btn" ) {
+
+                $.ajax({
+                    type: 'POST',
+                    data: { id_p : $( this ).attr("name") } ,
+                    beforeSend: function(){ } ,
+                    success: function( data ){ 
+                        console.log( data );
+                        bootbox.dialog({
+                            message: 'Modo: '+data,
+                            title: "Modo",
+                            onEscape: function() {},
+                            show: true,
+                  
+                            backdrop: false,
+                            closeButton: false,
+                            animate: false,
+                  
+                            className: "modo-modal",
+                  
+                        });
+
+                        setTimeout(function(){
+                            bootbox.hideAll()
+                        }, 2000 ); 
+                    }
+                });
+
+            }
+            else{
+
+
+                console.log($( this ).attr( 'name' ) );
+                    $.ajax({
+                        type: 'POST',
+                        data: { id_p : $( this ).attr("name") } ,
+                        beforeSend: function(){ } ,
+                        success: function( data ){ 
+                            console.log( data );
+
+                        }
+                    });
 
             }
         }      

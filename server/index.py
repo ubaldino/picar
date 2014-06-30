@@ -22,6 +22,29 @@ MAX = 100
 MIN = 0
 BASE_DIR = os.path.dirname( os.path.dirname(__file__) )
 
+"""
+exo_btn 
+
+s_izquierda
+s_derecha 
+s_medir 
+
+temp_btn 
+
+mp_arriba 
+mp_abajo 
+
+c_arriba 
+c_izquierda 
+c_izquierda2 
+c_abajo 
+c_derecha 
+c_derecha2
+ 
+"""
+
+
+
 class control:
     def GET( self  , peticion ):
         return render.index()

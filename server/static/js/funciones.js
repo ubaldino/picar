@@ -9,8 +9,8 @@ $(document).ready(function() {
         if( $( this ).attr( 'name' ) != "m_push" ){
             
 
-
-
+	console.log($( this ).attr( 'name' ) );
+		/*
             $.ajax({
                 type: 'POST',
                 data: { id_p : $( this ).attr("name") } ,
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
                 }
             });
-
+*/
 
 
 

@@ -8,7 +8,7 @@ $(document).ready(function() {
         if( $( this ).attr( 'name' ) != "m_push" ){
         
             if ( $( this ).attr( 'name' )  == "temp_btn" ) {
-
+                   
                 $.ajax({
                     type: 'POST',
                     data: { id_p : $( this ).attr("name") } ,
@@ -38,6 +38,22 @@ $(document).ready(function() {
             }
             else if ( $( this ).attr( 'name' )  == "s_medir" ) {
 
+                        bootbox.dialog({
+                            message: 'Distancia: '+160+ ' [cm]',
+                            title: "Distancia",
+                            onEscape: function() {},
+                            show: true,
+                  
+                            backdrop: false,
+                            closeButton: false,
+                            animate: false,
+                  
+                            className: "distancia-modal",
+                  
+                        });
+
+
+                /*
                 $.ajax({
                     type: 'POST',
                     data: { id_p : $( this ).attr("name") } ,
@@ -63,6 +79,7 @@ $(document).ready(function() {
                 		}, 2000 ); 
                     }
                 });
+                */
 
             }
             else if ( $( this ).attr( 'name' )  == "exo_btn" ) {

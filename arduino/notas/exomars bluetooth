@@ -1,0 +1,43 @@
+Exomar bluetooth
+
+
+
+pines digitales placa roboarania
+
+. gnd  . vcc  . digital
+
+.      .      . pin 14  8
+ 
+.      .      . pin 13  7
+
+.      .      . pin 12  6
+
+.      .      . pin 11  5
+
+.      .      . pin 15  9
+
+.      .      . pin 16  10
+
+.      .      . pin 17  11
+
+.      .      . pin 11  12
+
+
+exomars
+
+
+     |m8  |
+      |m7|
+       ir
+      |m9| |m10|	
+  m6-        -m5
+  m4-        -m3
+  m2-        -m1
+
+m1 pin digital 8
+m2 pin digital 7
+m3 pin digital 6
+m4 pin digital 5
+m5 pin digital 9
+m6 pin digital 10
+ 

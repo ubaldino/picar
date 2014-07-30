@@ -26,18 +26,18 @@ pines digitales placa roboarania
 exomars
 
 
-     |m8  |
-      |m7|
+     |m8  | = 3
+      |m7| = 2
        ir
       |m9| |m10|	
   m6-        -m5
   m4-        -m3
   m2-        -m1
 
-m1 pin digital 8
-m2 pin digital 7
-m3 pin digital 6
-m4 pin digital 5
-m5 pin digital 9
-m6 pin digital 10
+m1 pin digital 7
+m2 pin digital 6
+m3 pin digital 5
+m4 pin digital 9
+m5 pin digital 10
+m6 pin digital 11
  

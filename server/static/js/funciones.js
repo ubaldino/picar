@@ -8,15 +8,8 @@ $(document).ready(function() {
         if( $( this ).attr( 'name' ) != "m_push" ){
         
             if ( $( this ).attr( 'name' )  == "temp_btn" ) {
-                   
-                $.ajax({
-                    type: 'POST',
-                    data: { id_p : $( this ).attr("name") } ,
-                    beforeSend: function(){ } ,
-                    success: function( data ){ 
-                        console.log( data );
                         bootbox.dialog({
-                            message: 'Tempertura: '+data.split(":")[0]+'<br/>Humedad: '+data.split(":")[1] ,
+                            message: 'Tempertura: 3243 pC<br/>Humedad: 3243432' ,
                             title: "Temperatura/Humedad",
                             onEscape: function() {},
                             show: true,
@@ -28,15 +21,42 @@ $(document).ready(function() {
                             className: "temp-modal",
 
                         });
+                   /*
+                $.ajax({
+                    type: 'POST',
+                    data: { id_p : $( this ).attr("name") } ,
+                    beforeSend: function(){ } ,
+                    success: function( data ){ 
+                        console.log( data );
 
                         setTimeout(function(){
                             bootbox.hideAll()
                         }, 2000 ); 
                     }
                 });
+*/
 
             }
             else if ( $( this ).attr( 'name' )  == "s_medir" ) {
+                    
+
+                    bootbox.dialog({
+                            message: 'Distancia: '+54645645+ ' [cm]',
+                            title: "Distancia",
+                            onEscape: function() {},
+                            show: true,
+                  
+                            backdrop: false,
+                            closeButton: false,
+                            animate: false,
+                  
+                            className: "distancia-modal",
+                  
+                        });
+
+
+
+                /*
 
                 $.ajax({
                     type: 'POST',
@@ -63,6 +83,7 @@ $(document).ready(function() {
                 		}, 2000 ); 
                     }
                 });
+                */
 
             }
             else if ( $( this ).attr( 'name' )  == "exo_btn" ) {
